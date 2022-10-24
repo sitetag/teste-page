@@ -1,9 +1,4 @@
-/*
-    Folha de estilo do site One Page HTML5 e CSS3
-    html5css3.com.br
-    @author Professor José de Assis
-    joseassis.com.br
-*/
+
 
 /* Importação (Google Fonts) */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
@@ -15,9 +10,7 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -174,7 +167,7 @@ main h2 {
 /* Sobre */
 #sobre {
   padding: 50px 0px;
-  background: url(img/background.png);
+  background: url(img/background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -263,7 +256,7 @@ main h2 {
 /* Rodapé */
 address {
   padding: 35px 10px 50px 10px;
-  background: url(img/background2.png);
+  background: url(img/background2.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -410,7 +403,7 @@ footer a {
 
 }
 
-}
+
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
