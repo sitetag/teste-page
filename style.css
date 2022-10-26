@@ -32,10 +32,6 @@ body {
   align-items: center;
 }
 
-.Flex3 {
-  display: flex;
-  flex-direction: column;
-}
 
 .Flex4 {
   display: flex;
@@ -108,16 +104,26 @@ body {
 /* Cabeçalho */
 header {
   height: 60px;
+  background-color: #dad9e8;
 }
 
 #logo img {
-  width: 128px;
-  height: 128px;
+  width: 120px;
+  height: 120px;
+
 }
 
+#check{
+  display: none;
+}
 
-
-
+label{
+  font-size: 3em;
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  color: rgba(0,0,0,0.5);
+}
 
 nav ul {
   list-style: none;
@@ -129,7 +135,9 @@ nav ul {
   width: 100%;
   transition: all 0.5s;
 }
-
+#check:checked ~ ul{
+  right: 0;
+}
 
 
 nav ul li {
@@ -206,11 +214,7 @@ main h2 {
   margin-bottom: 25px;
 }
 
-#video iframe {
-  width: 340px;
-  height: 191px;
-  border: 0;
-}
+
 
 /* Wireframe */
 #wireframe {
@@ -313,11 +317,8 @@ footer a {
     text-shadow: #000 0.05em 0.05em 0.05em;
   }
 
-  /* One page */
-  #video iframe {
-    width: 560px;
-    height: 315px;
-  }
+ 
+  
 
   /* Rodapé */
   .Flex5 {
@@ -339,6 +340,9 @@ footer a {
   }
 
   /* Destaque */
+  main{
+    height: 45vh;
+  }
   main h1 {
     font-size: 5.5em;
   }
@@ -411,6 +415,9 @@ footer a {
   .Container {
     max-width: 960px;
   }
+  main{
+    height: 70vh;
+  }
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -448,12 +455,23 @@ footer a {
   }
 
   nav ul li a {
-    color: #343538;
+    color: #818694;
   }
 
   nav ul li a:hover {
     color: #c00000;
   }
+  #sobre{
+    background-attachment: fixed;
+  }
+  #destaqueSobre{
+    display: inline;
+  }
+  #destaqueSobre img{
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+  
 
   /* Destaque */
   main {
@@ -475,10 +493,7 @@ footer a {
   }
 
   /* One page */
-  .Flex3 {
-    flex-direction: row;
-    align-items: center;
-  }
+  
 
   /* Wireframe */
   #wireframe {
@@ -489,14 +504,8 @@ footer a {
     display: inline;
   }
 
-  #qrcode {
-    display: inline;
-  }
-
-  #qrcode img {
-    width: 225px;
-    height: 225px;
-  }
+  
+  
 
   /* Rodapé */
   .Flex6 {
@@ -517,6 +526,9 @@ footer a {
 
   #googleMaps {
     display: inline;
+  }
+  .flex6{
+    flex-direction: row-reverse;
   }
 }
 

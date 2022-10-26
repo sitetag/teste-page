@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
+    <header id="inicio">
+        <div class="Container Flex">
+            <div id="logo">
                 <img src="img/logo.png" alt="logo">
             </div>
             <div class="menu-burguer">
@@ -21,6 +21,8 @@
                 <div class="two"></div>
                 <div class="three"></div>
             </div>
+            <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
             <nav>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
@@ -31,78 +33,91 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <div>
+        <div class="Container">
             <h1>BLOG PESSOAL</h1>
             <h2>"A Palavra me domina."</h2>
+            <a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqySIIlPJ-Qwo4f4HSuXVeWk" target="_blank" rel="noopener"
+                class="Botao">Saiba +</a>
         </div>
     </main>
-    <section>
-        <div>
-            <div>
+    <section id="sobre">
+        <div class="Container Flex2">
+            <div id="destaqueSobre">
                 <img src="img/aviso-550x389.png" alt="aviso">
             </div>
-            <div>
+            <div id="textoSobre">
                 <h2>Aprender na prática</h2>
                 <p>Aprenda HTML5, CSS3 e SEO de forma simples, prática e objetiva desenvolvendo passo a passo do zero até a hospedagem um site One Page moderno e responsivo.</p>
-                <div>
+                <div class="TopicosSobre Flex2">
                     <img src="img/html5.png" alt="html5">
                     <p>HTML5</p>
                 </div>
-                <div>
+                <div class="TopicosSobre Flex2">
                     <img src="img/css3.png" alt="css3">
                     <p>CSS3</p>
                 </div>
-                <div>
+                <div class="TopicosSobre Flex2">
                     <img src="img/seo.png" alt="seo">
                     <p>SEO</p>
-                </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <section id="onepage">
+            <div class="Container">
+            <div id="textoSite">
+                <h2>One page site</h2>
+                <p>Ideal para negócios de pequeno ou médio porte o "one page site" é um site onde você inclui todas as
+                    informações que o visitante precisa de forma objetiva e criativa em uma única página.</p>
             </div>
         </div>
     </section>
-    <section>
-        <div>
-            <div>
+    <section id="wireframe">
+        <div class="Container Flex2">
+            <div id="textoWire">
                 <h2>Alice no País das Maravilhas</h2>
                 <p>A protagonista da história é inspirada em Alice Lidell, uma garota real filha de um amigo de Carroll. Ele deve ser feito da maneira mais simples possível, mostrando apenas o essencial, como uma espécie de rascunho, sem cores ou imagens. Clique no botão.</p>
                 <a href="06. Alice no País das Maravilhas autor Lewis Carroll.pdf" target="_blank" class="Botao">PDF</a>
             </div>
         </div>
     </section>
-    <section>
-        <div>
+    <section id="conteudo">
+        <div class="container">
             <h2>Conteúdo</h2>
-            <div>
+            <div class="Cards Flex4">
                 <div class="Card">
                     <img src="img/tesla.jpg" alt="Estrutura html5">
                     <h3>CARRO INTELIGÊNTE</h3>
                     <p>Piloto automático, sensores inteligentes, videogames no painel e um motor 100% elétrico. </p>
-                    <a href="https://www.youtube.com/watch?v=B_wH_-15LE0" target="_blank" class="Botao">Saiba +</a>
+                    <a href="https://www.youtube.com/watch?v=B_wH_-15LE0" target="_blank" class="Botao" rel="noopener">Saiba +</a>
                 </div>
                 <div class="Card">
                     <img src="img/pexels-kindel-media-8566531.jpg" alt="robo">
                     <h3>INTELIGÊNCIA ARTIFICIAL</h3>
                     <p>A criação de assistentes pessoais virtuais é uma das aplicações de IA mais utilizadas, atualmente. Seja a Siri, Cortana, Alexia. 
                     </p>
-                    <a href="https://www.youtube.com/watch?v=5nCVE76LqZQ&t=39s" target="_blank" class="Botao">Saiba +</a>
+                    <a href="https://www.youtube.com/watch?v=5nCVE76LqZQ&t=39s" target="_blank" rel="noopener" class="Botao">Saiba +</a>
                 </div>
                 <div class="Card">
                     <img src="img/house.jpg" alt="house">
                     <h3>CASA INTELIGENTE</h3>
                     <p> É um termo usado para descrever uma casa equipada com tecnologias que permitem que ela seja controlada e monitorada à distância.  </p>
-                    <a href="https://www.youtube.com/watch?v=vxQ3OQGeNuE" target="_blank" class="Botao">Saiba +</a>
+                    <a href="https://www.youtube.com/watch?v=vxQ3OQGeNuE" target="_blank" class="Botao" rel="noopener">Saiba +</a>
                 </div>
             </div>
         </div>
     </section>
     <address>
-        <div>
-            <div>
-                <a href="https://wa.me/5511012345678?" target="_blank">
+        <div class="container Flex6">
+            <div
+            id="contato">
+                <a href="https://wa.me/5511012345678?" target="_blank" rel="noopener">
                     <img src="img/whatsapp.png" alt="whatsapp" title="Abrir no WhatsApp">
                 </a>
             </div>
-            <div>
+            <div id="endereco">
                 <a href="https://goo.gl/maps/mLpzArWKPpWZDgaD7"><img src="img/mapa.png" alt="Mapa" id="iconeMapa"></a>
                 <img src="img/local.png" alt="local" id="iconeLocal">
                 <p>Rua Nome da rua, 1234</p>
@@ -120,20 +135,22 @@
     </address>
     <footer>
         <div class="Container Flex5">
-            <div>
+            <div id="copyright">
                 <p>&#169;2022 - Cris Santanna</p>
             </div>
             <div id="social">
-                <a href="https://www.youtube.com" target="_blank"><img src="img/youtube.png"
+                <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="img/youtube.png"
                         alt="youtube" /></a>
-                <a href="https://br.linkedin.com" target="_blank"><img src="img/linkedin.png"
+                <a href="https://br.linkedin.com" target="_blank" rel="noopener"><img src="img/linkedin.png"
                         alt="linkedin"></a>
                 <a href="https://pt-br.facebook.com
-                " target="_blank"><img src="img/facebook.png"
+                " target="_blank" rel="noopener"><img src="img/facebook.png"
                         alt="facebook" /></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"
+                <a href="https://www.instagram.com" target="_blank"
+                rel="noopener"><img src="img/instagram.png"
                         alt="instagram" /></a>
-                <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter" /></a>
+                <a href="https://twitter.com" target="_blank"
+                rel="noopener"><img src="img/twitter.png" alt="twitter" /></a>
             </div>
         </div>
     </footer>
@@ -141,3 +158,14 @@
     <script src="menu.js"></script>
 </body>
 </html>
+
+
+
+
+
+        
+           
+            
+            
+            
+        
