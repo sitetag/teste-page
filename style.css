@@ -1,535 +1,65 @@
-
-
-/* Importação (Google Fonts) */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
-/* CSS Reset */
-* {
+*{
   margin: 0;
-  border: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-
-
-body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+a{
+  color: white;
+  text-decoration: none;
 }
-
-/* Layout */
-.Container {
-  margin: 0 auto;
-}
-
-.Flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Flex2 {
-  display: flex;
+.header{
+  display: block;
   align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+  padding: 1rem;
 }
-
-
-.Flex4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-
-.Flex5 {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.Flex6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-/* Botão */
-.Botao {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 700;
-  background-color: #c00000;
-  padding: 10px 40px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-}
-
-/* topo do site */
-#topo {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-}
-
-/* Cartões */
-.Card {
-  margin-top: 25px;
-  width: 338px;
-  height: 520px;
-  background-color: #e8e8e8;
-  border: 1px solid #a1a1a1;
-  border-radius: 25px;
+i#burguer{
+  background-color: rgba(105, 151, 181, 0.357);
+  color: white;
+  display: block;
   text-align: center;
+  padding: 10px;
 }
-
-.Card img {
-  border-radius: 25px 25px 0px 0px;
+i#burguer:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
-
-.Card h3 {
-  margin-top: 15px;
-}
-
-.Card p {
-  text-align: left;
-  color: #434343;
-  padding: 10px 30px 50px 30px;
-}
-
-.Card a {
-  padding: 10px 100px;
-  border: 0;
-}
-
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-/* Cabeçalho */
-header {
-  height: 60px;
-  background-color: #dad9e8;
-}
-
-#logo img {
-  width: 120px;
-  height: 120px;
-
-}
-
-#check{
+nav{
   display: none;
 }
-
-label{
-  font-size: 3em;
-  position: fixed;
-  top: 5px;
-  right: 15px;
-  color: rgba(0,0,0,0.5);
+nav > ul{
+  list-style-type: none;
 }
-
-nav ul {
-  list-style: none;
-  background-color: #343538;
-  height: 100vh;
-  position: fixed;
-  top: 60px;
-  right: -100%;
-  width: 100%;
-  transition: all 0.5s;
-}
-#check:checked ~ ul{
-  right: 0;
-}
-
-
-nav ul li {
-  padding: 20px;
-  border-bottom: 1px solid #a9a9a9;
-}
-
-nav ul li a {
+nav > ul > li > a{
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  color: #fff;
-}
-
-/* Destaque */
-main {
-  height: 75vh;
-  background: url(img/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  background-color: rgb(1, 8, 74);
+  color: white;
+  border-top: 2px soli rgb(106, 121, 171);
 }
-
-main h1 {
-  font-size: 2.5em;
+nav > ul > li > a:hover{
+  background-color: rgb(86, 93, 98);
 }
-
-main h2 {
-  font-size: 1em;
-  margin: 20px 0px 50px 0px;
-}
-
-/* Sobre */
-#sobre {
-  padding: 50px 0px;
-  background: url(img/background.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#destaqueSobre {
-  display: none;
-}
-
-#textoSobre {
-  color: #fff;
-  padding: 0px 10px;
-}
-
-#textoSobre h2 {
-  margin-bottom: 10px;
-}
-
-.TopicosSobre {
-  margin-top: 20px;
-}
-
-.TopicosSobre img {
-  margin-right: 10px;
-}
-
-/* One page */
-#onepage {
-  padding: 50px 10px;
-}
-
-#onepage h2 {
-  margin-bottom: 10px;
-}
-
-#onepage p {
-  margin-bottom: 25px;
-}
-
-
-
-/* Wireframe */
-#wireframe {
-  padding: 50px 0px;
-  background: url(img/background.png);
-  background-size: cover;
-  background-position: center;
-}
-
-#textoWire {
-  color: #fff;
-  padding: 0px 10px;
-}
-
-#textoWire h2 {
-  margin-bottom: 10px;
-}
-
-#textoWire p {
-  margin-bottom: 40px;
-}
-
-#textoWire span {
-  display: none;
-}
-
-
-
-/* Conteúdo */
-#conteudo {
-  padding: 50px 0px;
-}
-
-#conteudo h2 {
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-
-
-
-
-/* Rodapé */
-address {
-  padding: 35px 10px 50px 10px;
-  background: url(img/background2.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-
-address a {
-  text-decoration: none;
-  color: #fff;
-}
-
-address img {
-  padding-top: 15px;
-}
-
-#iconeLocal {
-  display: none;
-}
-
-#dados {
-  margin: 30px 0px 15px 0px;
-}
-
-#googleMaps {
-  display: none;
-}
-
-footer {
-  padding: 50px 0px;
-  background-color: #343538;
-  font-size: 0.875em;
-  color: #fff;
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#social {
-  margin-bottom: 25px;
-}
-
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px) {
-  /* Layout */
-  .Container {
-    max-width: 540px;
-  }
-
-  /* Destaque */
-  main h1,
-  main h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-  }
-
- 
-  
-
-  /* Rodapé */
-  .Flex5 {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #social {
-    margin: 0;
-  }
-}
-
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-  /* Layout */
-  .Container {
-    max-width: 720px;
-  }
-
-  /* Destaque */
-  main{
-    height: 45vh;
-  }
-  main h1 {
-    font-size: 5.5em;
-  }
-
-  main h2 {
-    font-size: 2em;
+@media screen and (min-width: 768px){
+  i#burguer{
+    display: none;
   }
   nav{
-    display: none;
-}
-.one,
-.two,
-.three{
-    background-color: white;
-    height: 5px;
-    width: 100%;
-    margin: 6px auto;
-    transition-duration: 0.3s;
-}
-.menu-burguer{
-    width: 40px;
-    height: 30px;
-}
-.menu-section.on{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(150deg, #07c972, #359d9e);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu-section.on nav{
-  display: block;
-}
-.menu-section.on .menu-burguer{
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.menu-section.on .menu-burguer .one{
-  transform: rotate(45deg) translate(7px, 7px);
-}
-.menu-section.on .menu-burguer .two{
-  opacity: 0;
-}
-.menu-section.on .menu-burguer .three{
-  transform: rotate(-45deg) translate(8px, -9px);
-}
-.menu-section.on nav ul{
-  display: block;
-  text-align: center;
-}
-.menu-section.on nav ul li a{
-  transition-duration: 0.3s;
-  font-size: 5rem;
-  line-height: 15rem;
-  margin-left: 0;
-}
-
-}
-
-
-
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px) {
-  /* Layout */
-  .Container {
-    max-width: 960px;
+    display: block;
   }
-  main{
-    height: 70vh;
-  }
-}
-
-/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 1200px) {
-  /* Layout */
-  .Container {
-    max-width: 1140px;
-  }
-
-  /* Cabeçalho */
-  header {
-    height: 120px;
-  }
-
-  #logo img {
-    width: 189px;
-    height: 189px;
-    margin-top: 30px;
-  }
-
-  label {
-    display: none;
-  }
-
-  nav ul {
-    position: static;
-    height: auto;
-    background-color: transparent;
-    margin-top: 40px;
-  }
-
-  nav ul li {
-    float: left;
-    border: 0;
-  }
-
-  nav ul li a {
-    color: #818694;
-  }
-
-  nav ul li a:hover {
-    color: #c00000;
-  }
-  #sobre{
-    background-attachment: fixed;
-  }
-  #destaqueSobre{
-    display: inline;
-  }
-  #destaqueSobre img{
-    border-radius: 50%;
-    margin-right: 50px;
+  nav > ul > li{
+    display: inline-block;
+    
   }
   
-
-  /* Destaque */
-  main {
-    height: 70vh;
-  }
-
-  /* Sobre */
-  #sobre {
-    background-attachment: fixed;
-  }
-
-  #destaqueSobre {
-    display: inline;
-  }
-
-  #destaqueSobre img {
-    border-radius: 50%;
-    margin-right: 50px;
-  }
-
-  /* One page */
-  
-
-  /* Wireframe */
-  #wireframe {
-    background-attachment: fixed;
-  }
-
-  #wireframe span {
-    display: inline;
-  }
-
   
   
-
-  /* Rodapé */
-  .Flex6 {
-    flex-direction: row-reverse;
-  }
-
-  address {
-    padding-top: 50px;
-  }
-
-  #iconeLocal {
-    display: inline;
-  }
-
-  #iconeMapa {
-    display: none;
-  }
-
-  #googleMaps {
-    display: inline;
-  }
-  .flex6{
-    flex-direction: row-reverse;
-  }
 }
-
-
